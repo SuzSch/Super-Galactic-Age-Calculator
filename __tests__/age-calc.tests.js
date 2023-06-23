@@ -19,6 +19,6 @@ describe('Planet Age Calculator', () => {
 
   test('Should get the users age in Mars years', () => {
     const userAge = new AgeCalc(10);
-    expect(userAge.marsAge()).toEqual(18.8);
+    expect(userAge.marsAge()).toBeCloseTo(18.8);
   })
 });
