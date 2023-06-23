@@ -12,7 +12,7 @@ describe('Planet Age Calculator', () => {
   })
 
   test('Should get the users age in Mercury years', () => {
-    expect(userAge.ageOnPlanet(mercury)).toEqual(2.4)
+    expect(userAge.ageOnPlanet('mercury')).toEqual(2.4)
   })
 
   // test('Should get the users age in Venus years', () => {
