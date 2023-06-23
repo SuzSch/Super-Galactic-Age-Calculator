@@ -1,1 +1,5 @@
-export class AgeCalc { }
+export class AgeCalc {
+  constructor(age) {
+    this.age = age;
+  }
+}

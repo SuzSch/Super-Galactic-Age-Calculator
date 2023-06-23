@@ -4,6 +4,6 @@ describe('Planet Age Calculator', () => {
 
   test('get the users age in earth years', () => {
     const earthAge = new AgeCalc(10);
-    expect(earthAge).toEqual(10)
+    expect(earthAge.age).toEqual(10)
   })
 });
