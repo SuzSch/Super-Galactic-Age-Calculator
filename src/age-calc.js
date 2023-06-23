@@ -8,4 +8,7 @@ export class AgeCalc {
   venusAge() {
     return this.age * .62;
   }
+  marsAge() {
+
+  }
 };

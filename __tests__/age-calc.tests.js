@@ -12,8 +12,13 @@ describe('Planet Age Calculator', () => {
     expect(userAge.mercuryAge()).toEqual(2.4)
   })
 
-  test('Should get the users age in Venus year', () => {
+  test('Should get the users age in Venus years', () => {
     const userAge = new AgeCalc(10);
     expect(userAge.venusAge()).toEqual(6.2)
+  })
+
+  test('Should get the users age in Mars years', () => {
+    const userAge = new AgeCalc(10);
+    expect(userAge.marsAge()).toEqual(18.8);
   })
 });
