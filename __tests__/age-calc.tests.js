@@ -26,4 +26,5 @@ describe('Planet Age Calculator', () => {
   test('Should get the user age in Jupiter years', () => {
     expect(userAge.jupiterAge()).toEqual(118.6);
   })
+  test('Should determine how many years have passed on each planet since a past birtday')
 });
