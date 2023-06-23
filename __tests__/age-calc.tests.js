@@ -26,8 +26,8 @@ describe('Planet Age Calculator', () => {
   test('Should get the user age in Jupiter years', () => {
     expect(userAge.ageOnPlanet('jupiter')).toEqual(118.6);
   })
-  // test('Should determine how many years have passed on each planet since a past birtday', () => {
-  //   const pastAge = new AgeCalc(7);
-  //   expect((userAge) - (pastAge)).toEqual(3)
-  // })
+
+  test('Should determine how many years have passed on each planet since a past birtday', () => {
+    expect(userAge.yearsGoneBy()).toEqual(3);
+  })
 });

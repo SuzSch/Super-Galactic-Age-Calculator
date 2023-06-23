@@ -12,6 +12,9 @@ export class AgeCalc {
     let conversionNumber = this.ageConversion[planet];
     return this.age * conversionNumber;
   }
+  yearsGoneBy() {
+  }
+
 }
   // mercuryAge() {
   //   return this.age * .24;
