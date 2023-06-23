@@ -11,4 +11,6 @@ export class AgeCalc {
   marsAge() {
     return this.age * 1.88;
   }
+  jupiterAge() {
+  }
 };

@@ -21,4 +21,9 @@ describe('Planet Age Calculator', () => {
     const userAge = new AgeCalc(10);
     expect(userAge.marsAge()).toBeCloseTo(18.8);
   })
+
+  test('Should get the user age in Jupiter years', () => {
+    const userAge = new AgeCalc(10);
+    expect(userAge.jupiterAge()).toEqual(118.6);
+  })
 });
