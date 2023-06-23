@@ -5,4 +5,5 @@ export class AgeCalc {
   mercuryAge() {
     return this.age * .24;
   }
+  venusAge() { }
 };
