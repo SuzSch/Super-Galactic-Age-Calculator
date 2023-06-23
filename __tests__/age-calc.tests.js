@@ -2,7 +2,7 @@ import { AgeCalc } from './../src/age-calc.js';
 
 describe('Planet Age Calculator', () => {
 
-  test('Should get the users age in earth years', () => {
+  test('Should get the users age in Earth years', () => {
     const userAge = new AgeCalc(10);
     expect(userAge.age).toEqual(10)
   })
