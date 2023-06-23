@@ -8,6 +8,10 @@ export class AgeCalc {
       jupiter: 11.86,
     };
   }
+  ageOnPlanet(planet) {
+    let conversionNumber = this.ageConversion[planet];
+    return this.age * conversionNumber;
+  }
 }
   // mercuryAge() {
   //   return this.age * .24;

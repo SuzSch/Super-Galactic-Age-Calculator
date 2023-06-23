@@ -7,13 +7,13 @@ describe('Planet Age Calculator', () => {
     userAge = new AgeCalc(10);
   });
 
-  // test('Should get the users age in Earth years', () => {
-  //   expect(userAge.age).toEqual(10)
-  // })
+  test('Should get the users age in Earth years', () => {
+    expect(userAge.age).toEqual(10)
+  })
 
-  // test('Should get the users age in Mercury years', () => {
-  //   expect(userAge.mercuryAge()).toEqual(2.4)
-  // })
+  test('Should get the users age in Mercury years', () => {
+    expect(userAge.ageOnPlanet(mercury)).toEqual(2.4)
+  })
 
   // test('Should get the users age in Venus years', () => {
   //   expect(userAge.venusAge()).toEqual(6.2)
@@ -26,8 +26,8 @@ describe('Planet Age Calculator', () => {
   // test('Should get the user age in Jupiter years', () => {
   //   expect(userAge.jupiterAge()).toEqual(118.6);
   // })
-  test('Should determine how many years have passed on each planet since a past birtday', () => {
-    const pastAge = new AgeCalc(7);
-    expect((userAge) - (pastAge)).toEqual(3)
-  })
+  // test('Should determine how many years have passed on each planet since a past birtday', () => {
+  //   const pastAge = new AgeCalc(7);
+  //   expect((userAge) - (pastAge)).toEqual(3)
+  // })
 });
