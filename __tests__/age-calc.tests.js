@@ -28,6 +28,7 @@ describe('Planet Age Calculator', () => {
   })
 
   test('Should determine how many years have passed on each planet since a past birtday', () => {
+    let pastAge = this.age
     expect(userAge.yearsGoneBy()).toEqual(3);
   })
 });

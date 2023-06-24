@@ -1,6 +1,7 @@
 export class AgeCalc {
-  constructor(earthAge) {
-    this.age = earthAge;
+  constructor(currentAge, pastAge) {
+    this.currentage = currentAge;
+    this.pastAge = pastAge;
     this.ageConversion = {
       mercury: 0.24,
       venus: 0.62,
