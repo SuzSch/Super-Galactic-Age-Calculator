@@ -4,7 +4,7 @@ describe('Planet Age Calculator', () => {
   let userAge;
 
   beforeEach(() => {
-    userAge = new AgeCalc(10, 7);
+    userAge = new AgeCalc(10, 7, 15);
   });
 
   test('Should get the users age in Earth years', () => {
@@ -29,5 +29,9 @@ describe('Planet Age Calculator', () => {
 
   test('Should determine how many years have passed on each planet since a past birthday', () => {
     expect(userAge.yearsGoneBy('mercury')).toBeCloseTo(.72);
+  })
+
+  test('Should determine how many years have yet to pass on each planet until a future birthday', () => {
+    expect(userAge.yearsToCome('mercury')).toEqual(1.2)
   })
 });
