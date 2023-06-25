@@ -1,6 +1,6 @@
 export class AgeCalc {
   constructor(currentAge, pastAge) {
-    this.currentage = currentAge;
+    this.currentAge = currentAge;
     this.pastAge = pastAge;
     this.ageConversion = {
       mercury: 0.24,
@@ -11,9 +11,11 @@ export class AgeCalc {
   }
   ageOnPlanet(planet) {
     let conversionNumber = this.ageConversion[planet];
-    return this.age * conversionNumber;
+    return this.currentAge * conversionNumber;
   }
-  yearsGoneBy() {
+  yearsGoneBy(planet) {
+    let difference = this.currentAge - this.pastAge;
+    return difference * this.ageConversion[planet];
   }
 
 }
